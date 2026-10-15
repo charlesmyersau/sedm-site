@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index,follow">
+  <meta name="robots" content="noindex,follow">
   <title>Contact Dad | SEDM</title>
   <meta name="description" content="A simple private way to send Dad a message.">
   <link rel="stylesheet" href="css/style.css">
@@ -25,7 +25,7 @@
       <p class="lead contact-lead">You can write as much or as little as you want. You do not need to explain anything, and you can choose whether you want a reply.</p>
 
       <div class="message-box contact-box">
-        <form id="contact-form">
+        <form id="contact-form" action="https://formspree.io/f/myekbwqj" method="POST">
           <label>Your name
             <input name="name" autocomplete="name" placeholder="Your name">
           </label>
@@ -36,8 +36,8 @@
 
           <fieldset class="reply-fieldset">
             <legend>Would you like Dad to reply?</legend>
-            <label class="choice"><input type="radio" name="reply" value="yes"> <span>Yes</span></label>
-            <label class="choice"><input type="radio" name="reply" value="no" checked> <span>No reply needed</span></label>
+            <label class="choice"><input type="radio" name="reply" value="yes" checked> <span>Yes</span></label>
+            <label class="choice"><input type="radio" name="reply" value="no"> <span>No reply needed</span></label>
           </fieldset>
 
           <label>If you would like a reply, how can I reach you?
@@ -49,14 +49,13 @@
           </label>
 
           <button class="btn" type="submit">Send message</button>
-          <p class="form-note"><strong>Local test version:</strong> this form is not connected yet, so pressing Send will not transmit anything. We will connect it privately before the site goes public.</p>
           <div id="form-status" class="status" role="status" aria-live="polite"></div>
         </form>
       </div>
 
       <div class="privacy-note">
         <h2>Your privacy matters.</h2>
-        <p>When this site goes live, the contact form will send your message privately to Dad. Your contact details will not be displayed publicly on this website.</p>
+        <p>Your message will be sent privately to Dad. Your contact details will not be displayed publicly on this website.</p>
       </div>
     </div>
   </section>
