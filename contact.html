@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Contact Dad | SEDM</title>
+  <meta name="description" content="A simple private way to send Dad a message.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">SEDM</a>
+    <nav><a href="index.html">Home</a></nav>
+  </div>
+</header>
+
+<main>
+  <section class="section contact-section">
+    <div class="wrap copy">
+      <a class="back" href="index.html">← Back home</a>
+      <div class="eyebrow">The door is open</div>
+      <h1 class="contact-title">Contact Dad</h1>
+      <p class="lead contact-lead">You can write as much or as little as you want. You do not need to explain anything, and you can choose whether you want a reply.</p>
+
+      <div class="message-box contact-box">
+        <form id="contact-form">
+          <label>Your name
+            <input name="name" autocomplete="name" placeholder="Your name">
+          </label>
+
+          <label>Your message
+            <textarea name="message" required placeholder="Even just hello is enough"></textarea>
+          </label>
+
+          <fieldset class="reply-fieldset">
+            <legend>Would you like Dad to reply?</legend>
+            <label class="choice"><input type="radio" name="reply" value="yes"> <span>Yes</span></label>
+            <label class="choice"><input type="radio" name="reply" value="no" checked> <span>No reply needed</span></label>
+          </fieldset>
+
+          <label>If you would like a reply, how can I reach you?
+            <input name="contact" autocomplete="email" placeholder="Email, phone number, username, etc.">
+          </label>
+
+          <label>Anything else you want me to know? <span class="optional">Optional</span>
+            <textarea class="short-textarea" name="extra" placeholder="Anything you would like to add"></textarea>
+          </label>
+
+          <button class="btn" type="submit">Send message</button>
+          <p class="form-note"><strong>Local test version:</strong> this form is not connected yet, so pressing Send will not transmit anything. We will connect it privately before the site goes public.</p>
+          <div id="form-status" class="status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <div class="privacy-note">
+        <h2>Your privacy matters.</h2>
+        <p>When this site goes live, the contact form will send your message privately to Dad. Your contact details will not be displayed publicly on this website.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">Made with love. <span data-year></span></div></footer>
+<script src="js/site.js"></script>
+</body>
+</html>
