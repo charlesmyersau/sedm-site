@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://charlesmyersau.github.io/sedm-site/sitemap.xml
